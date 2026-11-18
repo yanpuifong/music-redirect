@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listen to the album</title>
+</head>
+<body>
+<script>
+const appleMusic = "https://music.apple.com/nz/album/tales-before-dawn/6827838563";
+const spotify = "https://open.spotify.com/album/0CCf6iRk6XdneqU3bQlqJx?si=3sBfi_RRQHyIjHFDNtlJjw&utm_source=copy-link";
+const device = navigator.userAgent;
+if (/iPhone|iPad|iPod/i.test(device)) {
+window.location.replace(appleMusic);
+} else if (/Android/i.test(device)) {
+window.location.replace(spotify);
+} else {
+window.location.replace(spotify);
+}
+</script>
+</body>
+</html>
